@@ -22,7 +22,7 @@ public class test {
 				+ "    ],\r\n"
 				+ "    \"website\": \"http://google.com\",\r\n"
 				+ "    \"language\": \"French-IN\"\r\n"
-				+ "}").when().post("maps/api/place/add/json").then().log().all().statusCode(202);
+				+ "}").when().post("maps/api/place/add/json").then().log().all().statusCode(200);
 	}
 
 }
