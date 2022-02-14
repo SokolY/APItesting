@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;jsonResn&apos; in &apos;parseJson.main(...)&apos; to &apos;jsonResp&apos;&#x0D;&#x0A;- Original project: &apos;Apitest&apos;&#x0D;&#x0A;- Original element: &apos;parseJson.main(String[]).jsonResn&apos;&#x0D;&#x0A;- Renamed element: &apos;jsonResn&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;jsonResn&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;{parseJson.java[parseJson~main~\[QString;@jsonResn!179!242!188!195!QJsonPath;!0!false" name="jsonResp" references="true" stamp="1644865237145" version="1.0"/>
+</session>

@@ -44,7 +44,7 @@ public class test {
 		when().get("maps/api/place/get/json").
 		then().log().all().assertThat().statusCode(200).extract().response().asString();
 		
-//		JsonPath jsRespGetPlace = new JsonPath(getPlaceResponceStr);
+//		JsonPath jsRespGetPlace = new JsonPath(payload.ComplexJsonResponse());
 		
 		String addressFromResp = ReusableMethod.rawToJson(getPlaceResponceStr).getString("address");
 		
