@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.*;
 
 import org.testng.Assert;
 
+import files.ReusableMethod;
 import files.payload;
 
 public class test {
@@ -17,8 +18,9 @@ public class test {
 		extract().response().asString();
 		
 		System.out.println(response);
-		JsonPath jsresp = new JsonPath(response);
-		String placeId = jsresp.getString("place_id");
+//		JsonPath jsresp = new JsonPath(response);
+//		String placeId = jsresp.getString("place_id");
+		String placeId = ReusableMethod.rawToJson(response).getString("place_id");
 		System.out.println(placeId);
 		
 		System.out.println("Update plece function");
@@ -42,13 +44,13 @@ public class test {
 		when().get("maps/api/place/get/json").
 		then().log().all().assertThat().statusCode(200).extract().response().asString();
 		
-		JsonPath jsRespGetPlace = new JsonPath(getPlaceResponceStr);
-		String addressFromResp = jsRespGetPlace.getString("address");
+//		JsonPath jsRespGetPlace = new JsonPath(getPlaceResponceStr);
+		
+		String addressFromResp = ReusableMethod.rawToJson(getPlaceResponceStr).getString("address");
 		
 		System.out.println(getPlaceResponceStr);
 		System.out.println(addressFromResp);
-		
-		Assert.assertEquals(address, addressFromResp);
+		Assert.assertEquals(addressFromResp, "71 happy street, USA");
 	}	
 
 }
