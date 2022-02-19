@@ -26,7 +26,7 @@ public class DinamicJson {
 //		System.out.println("Response message" + respMsg);
 		
 			RestAssured.baseURI = "http://216.10.245.166";
-		String addBookResp = given().log().all().header("Content-Type", "application/json").body(payload.addBook("ysokol", "1488")).
+		String addBookResp = given().log().all().header("Content-Type", "application/json").body(payload.addBook(isbn, aisle)).
 				when().post("/Library/Addbook.php").
 				then().log().all().extract().response().asString();
 		
@@ -39,7 +39,7 @@ public class DinamicJson {
 	
 	@DataProvider (name = "Books")
 	public Object[][] BookProvider() {
-		Object[][] books = new Object[][] {{"cafslw", "34235"}, {"qarclw", "9845"}, {"vavlmdlw", "9325"}};
+		Object[][] books = new Object[][] {{"cafslwq", "34236"}, {"qarclwq", "9846"}, {"vavlmdlwq", "9326"}};
 //		return new Object[][] {{"cdfsc","34234"}, {"qwrcs", "9842"}, {"vdvlmdv", "932"}};
 		return books;
 	}

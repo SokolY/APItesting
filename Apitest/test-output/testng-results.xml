@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-19T19:50:48 EET" name="Default suite" finished-at="2022-02-19T19:50:50 EET" duration-ms="2535">
+  <suite started-at="2022-02-19T21:24:12 EET" name="Default suite" finished-at="2022-02-19T21:24:16 EET" duration-ms="3562">
     <groups>
     </groups>
-    <test started-at="2022-02-19T19:50:48 EET" name="Default test" finished-at="2022-02-19T19:50:50 EET" duration-ms="2535">
+    <test started-at="2022-02-19T21:24:12 EET" name="Default test" finished-at="2022-02-19T21:24:16 EET" duration-ms="3562">
       <class name="DinamicJson">
-        <test-method signature="Addbook()[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T19:50:48 EET" name="Addbook" finished-at="2022-02-19T19:50:50 EET" duration-ms="2057" status="PASS">
+        <test-method signature="Addbook(java.lang.String,java.lang.String)[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T21:24:12 EET" name="Addbook" data-provider="Books" finished-at="2022-02-19T21:24:15 EET" duration-ms="2190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cafslwq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34236]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addbook -->
-        <test-method signature="deleteBook()[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T19:50:50 EET" name="deleteBook" finished-at="2022-02-19T19:50:50 EET" duration-ms="449" status="PASS">
+        <test-method signature="Addbook(java.lang.String,java.lang.String)[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T21:24:15 EET" name="Addbook" data-provider="Books" finished-at="2022-02-19T21:24:15 EET" duration-ms="445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qarclwq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9846]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addbook -->
+        <test-method signature="Addbook(java.lang.String,java.lang.String)[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T21:24:15 EET" name="Addbook" data-provider="Books" finished-at="2022-02-19T21:24:15 EET" duration-ms="436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vavlmdlwq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9326]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addbook -->
+        <test-method signature="deleteBook()[pri:0, instance:DinamicJson@1eb5174b]" started-at="2022-02-19T21:24:16 EET" name="deleteBook" finished-at="2022-02-19T21:24:16 EET" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBook -->

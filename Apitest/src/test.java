@@ -4,6 +4,10 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import org.testng.Assert;
 
 import files.ReusableMethod;
@@ -11,10 +15,11 @@ import files.payload;
 
 public class test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		RestAssured.baseURI= "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json").
-		body(payload.AddAddress()).when().post("maps/api/place/add/json").then().assertThat().statusCode(200).body("scope", equalTo("APP")).
+//		body(payload.AddAddress()).when().post("maps/api/place/add/json").then().assertThat().statusCode(200).body("scope", equalTo("APP")).
+		body(new String(Files.readAllBytes(Paths.get("D:\\FromPC\\DiscD\\Java\\APITesting\\Apitest\\src\\AddPlace.txt")))).when().post("maps/api/place/add/json").then().assertThat().statusCode(200).body("scope", equalTo("APP")).
 		extract().response().asString();
 		
 		System.out.println(response);
