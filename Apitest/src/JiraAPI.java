@@ -1,5 +1,7 @@
 	import static io.restassured.RestAssured.*;
 
+import java.io.File;
+
 import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;
 import io.restassured.path.json.JsonPath;
@@ -9,6 +11,8 @@ public class JiraAPI {
 		// TODO Auto-generated method stub
 		RestAssured.baseURI = "http://localhost:8080";
 		SessionFilter session = new SessionFilter();
+		
+		//Log in
 		String response = given().log().all().header("Content-Type", "application/json").body("{\r\n"
 				+ "    \"username\": \"yura.sokol\",\r\n"
 				+ "    \"password\": \"Jira1234\"\r\n"
@@ -21,6 +25,7 @@ public class JiraAPI {
 		String cookesId = js.getString("session.value");
 		System.out.println("Session cookes is " + cookesId);
 		
+		//Add comment
 		given().pathParam("id", "10006").log().all().header("Content-Type", "application/json").body("{\r\n"
 				+ "    \"body\": \"Commet to the issue from Eclipse.\",\r\n"
 				+ "    \"visibility\": {\r\n"
@@ -30,6 +35,20 @@ public class JiraAPI {
 				+ "}").filter(session).
 		when().post("/rest/api/2/issue/{id}/comment").
 		then().log().all().assertThat().statusCode(201);
+//		
+//		
+//		//Attach file 
+//		given().filter(session).header("X-Atlassian-Token", "no-check").pathParam("key", "10006").header("Content-Type", "multipart/form-data").
+//		multiPart("file", new File("D:\\FromPC\\DiscD\\Java\\APITesting\\Apitest\\src\\AddPlace.txt")).
+//		when().post("/rest/api/2/issue/{key}/attachments").
+//		then().log().all().assertThat().statusCode(200);
+//		
+		//get Issue
+		String issueText = given().filter(session).pathParam("key", "10006").queryParam("fields", "comment").
+		when().get("/rest/api/2/issue/{key}").
+		then().extract().response().asString();
+		
+		System.out.println("Issue field is: " + issueText);
 	}
 
 }
