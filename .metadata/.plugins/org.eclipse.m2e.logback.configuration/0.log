@@ -1386,3 +1386,51 @@
 2022-03-17 17:01:29,377 [Worker-313: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
 2022-03-17 17:01:29,377 [Worker-313: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-03-17 17:01:29,378 [Worker-313: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:13:13,426 [Worker-350: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:13:13,430 [Worker-350: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:13:13,431 [Worker-350: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:13:13,433 [Worker-350: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:22:44,927 [Worker-353: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:22:44,930 [Worker-353: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:22:44,931 [Worker-353: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:22:44,932 [Worker-353: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:23:10,483 [Worker-354: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:23:10,484 [Worker-354: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:23:10,485 [Worker-354: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:23:10,486 [Worker-354: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:29:20,026 [Worker-359: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:29:20,028 [Worker-359: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:29:20,030 [Worker-359: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:29:20,031 [Worker-359: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:43:21,690 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:43:21,693 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:43:21,694 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:43:21,696 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:43:45,911 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:43:45,913 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:43:45,915 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:43:45,921 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:54:40,153 [Worker-362: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:54:40,154 [Worker-362: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:54:40,155 [Worker-362: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:54:40,157 [Worker-362: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 11:54:54,039 [Worker-366: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:54:54,041 [Worker-366: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 11:54:54,044 [Worker-366: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 11:54:54,045 [Worker-366: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 12:00:50,258 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:00:50,259 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 12:00:50,261 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:00:50,262 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 12:02:16,512 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:02:16,513 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 12:02:16,514 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:02:16,514 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 12:02:42,256 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:02:42,257 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 12:02:42,258 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:02:42,260 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
+2022-03-18 12:22:35,748 [Worker-379: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:22:35,751 [Worker-379: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\main\resources
+2022-03-18 12:22:35,752 [Worker-379: Launching JiraAPI] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-03-18 12:22:35,753 [Worker-379: Launching JiraAPI] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\FromPC\DiscD\Java\APITesting\Apitest\src\test\resources
