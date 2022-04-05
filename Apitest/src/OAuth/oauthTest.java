@@ -25,7 +25,9 @@ public class oauthTest {
 //		driver.findElement(By.id("identifierNext")).click();
 //		Thread.sleep(3000);
 //		driver.quit();
-		String codeUrl = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWjaPu6P3hDUJ8O-XoiPVWapcd1RPC--wratopeA1HGQ6mmpxgvA6C1jCriPxaz92A&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+		
+		
+		String codeUrl = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWhhpuCaW0PnWQiAgYq9IxF-bcOmUbbYVqQQIt_3NMt-HWQyhPU-dLtm-N1wwE_pYg&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
 		String splitedStr = codeUrl.split("code=")[1];
 		System.out.println(splitedStr);
 		String parsedCode = splitedStr.split("&scope")[0];
@@ -33,27 +35,26 @@ public class oauthTest {
 		
 
 		//getAccessToken
-		String accessTokenResponse = given().urlEncodingEnabled(false).
-				queryParams("code", parsedCode).				 
-		queryParams("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com").
-		queryParams("client_secret", "erZOWM9g3UtwNRj340YYaK_W").
-		queryParams("redirect_uri", "https://rahulshettyacademy.com/getCourse.php").
-		queryParams("client_secret", "erZOWM9g3UtwNRj340YYaK_W").
-		queryParams("grant_type", "authorization_code").
-		when().log().all().
-		post("https://www.googleapis.com/oauth2/v4/token").asString();
-		
-		JsonPath js = new JsonPath(accessTokenResponse);
-		String accessToken = js.getString("access_token");
-		System.out.println("Access token is " + accessToken);
-		
-		//getCources
-		String st1 = given().contentType("application/json").queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON).
-		when().
-		get("https://rahulshettyacademy.com/getCourse.php").asString();
-		
-		
-		System.out.println(st1);
+				String accessTokenResponse = given().urlEncodingEnabled(false).
+						queryParams("code", parsedCode).				 
+				queryParams("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com").
+				queryParams("client_secret", "erZOWM9g3UtwNRj340YYaK_W").
+				queryParams("redirect_uri", "https://rahulshettyacademy.com/getCourse.php").
+				queryParams("client_secret", "erZOWM9g3UtwNRj340YYaK_W").
+				queryParams("grant_type", "authorization_code").
+				when().log().all().
+				post("https://www.googleapis.com/oauth2/v4/token").asString();
+				
+				JsonPath js = new JsonPath(accessTokenResponse);
+				String accessToken = js.getString("access_token");
+				System.out.println("Access token is " + accessToken);
+				
+				//getCources
+				String st1 = given().queryParam("access_token", accessToken).
+					when().get("https://rahulshettyacademy.com/getCourse.php").asString();
+				
+				
+				System.out.println(st1);
 		
 		
 		
