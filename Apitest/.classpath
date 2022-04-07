@@ -18,5 +18,13 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/gson-2.8.9.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/gson-2.8.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-annotations-2.12.6.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-annotations-2.12.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-core-2.12.6.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-core-2.12.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-databind-2.12.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Yura/Trainings/APITestting/Jars/jackson-databind-2.12.6.1-javadoc.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
