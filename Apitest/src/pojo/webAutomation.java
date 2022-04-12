@@ -3,19 +3,19 @@ package pojo;
 public class webAutomation {
 	private String courseTitle;
 	private String price;
-	
-	public void setCourseTitle(String courseTitle) {
-		this.courseTitle = courseTitle;
-	}
 	public String getCourseTitle() {
 		return courseTitle;
 	}
-	
-	public void setPrice(String price) {
-		this.price = price;
+	public void setCourseTitle(String courseTitle) {
+		this.courseTitle = courseTitle;
 	}
 	public String getPrice() {
 		return price;
 	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	
+	
 
 }

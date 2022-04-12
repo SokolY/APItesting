@@ -2,18 +2,18 @@ package pojo;
 
 import java.util.List;
 
-public class CoursesResp {
-	
-	private List<webAutomation> webAtomation;
+public class CoursesResp {	
+	private List<webAutomation> webAutomation;
 	private List<api> api;
 	private List<mobile> mobile;
 	
-	public List<webAutomation> getWebAtomation() {
-		return webAtomation;
+	public List<webAutomation> getWebAutomation() {
+		return webAutomation;
 	}
-	public void setWebAtomation(List<webAutomation> webAtomation) {
-		this.webAtomation = webAtomation;
+	public void setWebAutomation(List<webAutomation> webAutomation) {
+		this.webAutomation = webAutomation;
 	}
+	
 	public List<api> getApi() {
 		return api;
 	}
@@ -26,4 +26,6 @@ public class CoursesResp {
 	public void setMobile(List<mobile> mobile) {
 		this.mobile = mobile;
 	}
+	
+
 }

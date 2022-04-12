@@ -1,6 +1,8 @@
 package OAuth;
 import static io.restassured.RestAssured.*;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +11,10 @@ import org.openqa.selenium.firefox.GeckoDriverInfo;
 
 import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
+import pojo.CoursesResp;
+import pojo.RahulShettyResponse;
+import pojo.api;
+import pojo.webAutomation;
 public class oauthTest {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -27,7 +33,8 @@ public class oauthTest {
 //		driver.quit();
 		
 		
-		String codeUrl = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWhhpuCaW0PnWQiAgYq9IxF-bcOmUbbYVqQQIt_3NMt-HWQyhPU-dLtm-N1wwE_pYg&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+		String codeUrl = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWhyblBXydeRbG-TH4uWu1mV2efmpEGbXqTND72jOt9yuqpNKiALJwacyvOjDRumKA&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
+		
 		String splitedStr = codeUrl.split("code=")[1];
 		System.out.println(splitedStr);
 		String parsedCode = splitedStr.split("&scope")[0];
@@ -49,12 +56,41 @@ public class oauthTest {
 				String accessToken = js.getString("access_token");
 				System.out.println("Access token is " + accessToken);
 				
-				//getCources
-				String st1 = given().queryParam("access_token", accessToken).
-					when().get("https://rahulshettyacademy.com/getCourse.php").asString();
+////				getCources
+//				String st1 = given().queryParam("access_token", accessToken).
+//					when().get("https://rahulshettyacademy.com/getCourse.php").asString();
+//				
+//				
+//				System.out.println(st1);
+//				
+				
+				RahulShettyResponse rr = given().queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON)
+						.when().get("https://rahulshettyacademy.com/getCourse.php").as(RahulShettyResponse.class);
 				
 				
-				System.out.println(st1);
+				System.out.println("LinkedIn is: " + rr.getLinkedIn());
+				
+				
+				System.out.println("Expertise is: " + rr.getExpertise());
+				
+				
+//				System.out.println("Courses are: " + );
+				
+				for(webAutomation wa : rr.getCourses().getWebAutomation()) {
+					System.out.println("webAutomation course title is: " + wa.getCourseTitle());
+					if(wa.getCourseTitle().equals("Cypress")) {
+						System.out.println("Price for course Cypress is: " + wa.getPrice()); 
+					}
+				}
+//				
+//				
+				
+				List<api> apiCourses = rr.getCourses().getApi();
+				for(int i = 0; i<apiCourses.size(); i++) {
+					System.out.println("Course title is: " + apiCourses.get(i).getCourseTitle());
+					System.out.println("Course price is: " + apiCourses.get(i).getPrice());
+				}
+				
 		
 		
 		
