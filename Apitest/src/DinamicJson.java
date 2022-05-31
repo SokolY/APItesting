@@ -41,7 +41,6 @@ public class DinamicJson {
 	@DataProvider (name = "Books")
 	public Object[][] BookProvider() {
 		Object[][] books = new Object[][] {{"cafslwq", "34236"}, {"qarclwq", "9846"}, {"vavlmdlwq", "9326"}};
-//		return new Object[][] {{"cdfsc","34234"}, {"qwrcs", "9842"}, {"vdvlmdv", "932"}};
 		return books;
 	}
 	

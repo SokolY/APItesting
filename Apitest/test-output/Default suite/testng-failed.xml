@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DinamicJson">
+      <class name="ExcelDrivenBooks">
         <methods>
           <include name="deleteBook"/>
         </methods>
-      </class> <!-- DinamicJson -->
+      </class> <!-- ExcelDrivenBooks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
